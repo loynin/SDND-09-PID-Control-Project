@@ -38,7 +38,7 @@ Connected!!!
 The following is an image of the simulator:
 
 Here is initialized simulator before running against dataset:
-[![Everything Is AWESOME](https://www.youtube.com/upload_thumbnail?v=0tfK9QU9omE&t=hqdefault&ts=1516508809022)](https://youtu.be/0tfK9QU9omE)
+[![PID Controller with D & I  Turn Off](https://www.youtube.com/upload_thumbnail?v=0tfK9QU9omE&t=hqdefault&ts=1516508809022)](https://youtu.be/0tfK9QU9omE)
 
 ---
 
