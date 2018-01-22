@@ -39,7 +39,7 @@ All components of PID are affected to the performance of the controller.
 
 - P: in case that only P is turn on and D and I are off, the car could drive it self for about 20 seconds and then it get off track. It is expected for the result like this because while only P is activated the system could not solve the problem of the cte. 
 
-<a href="https://youtu.be/0tfK9QU9omE" target="blank"><img scr="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png" /></a>
+<a href="https://youtu.be/0tfK9QU9omE" target="_blank"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png"></a>
 [![Video of PID Controller with D and I  are Turn
 Off](https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png)](https://youtu.be/0tfK9QU9omE){:target="_blank"}
 
