@@ -2,6 +2,54 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+# Overview
+
+The three main components to control in driving a vehicle are steering, throttling, and braking. It sounds simple for human to drive the vehicle because human can interact to these components smoothly and adapt to the condition of driving. On the other hand, it is a very complicate task in self-driving vehicle to control these components. To solve the job for self-driving vehicle to control these components, there are many technologies that could be used. PID is considered the most practical technology and it has implemented in self-driving vehicle today. This project is using PID controller to drive the self-driving car and it is coding by using C++ programming.
+
+## Project Introduction
+The purpose of this project is using C++ to design a PID system to control the self-driving car. This project produces a program that is connected to the simulator by getting the data from the simulator and predicting the steering angle and acceleration speed and brake to make sure that the car will keep driving on the lane. 
+
+## Running the Code
+This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
+
+This repository includes two files that can be used to set up and intall uWebSocketIO for either Linux or Mac systems. For windows you can use either Docker, VMware, or even Windows 10 Bash on Ubuntu to install uWebSocketIO.
+
+Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
+
+1. mkdir build
+2. cd build
+3. cmake ..
+4. make
+5. ./pid
+
+From the `build` directory, execute `./pid`. The output should be:
+
+```
+Listening to port 4567
+Connected!!!
+```
+
+## Input Data into PID Controller
+
+> * The input data such as cte ( cross track error), speed, and steering angle into the PID system is provided by simulator.
+
+## Output of the PID Controller
+
+The following is an image of the simulator:
+
+Here is initialized simulator before running against dataset:
+[![PID Controller with D & I  Turn Off](https://www.youtube.com/upload_thumbnail?v=0tfK9QU9omE&t=hqdefault&ts=1516508809022)](https://youtu.be/0tfK9QU9omE)
+
+---
+
+Here is the simulator final state after running the particle filter:
+
+<kbd>
+<img src="images/image3.png" />
+</kbd>
+
+---
+
 
 ## Dependencies
 
@@ -37,19 +85,6 @@ There's an experimental patch for windows in this [PR](https://github.com/udacit
 
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
 
-## Editor Settings
-
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
-
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
-
-## Code Style
-
-Please (do your best to) stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
-
 ## Project Instructions and Rubric
 
 Note: regardless of the changes you make, your project must be buildable using
@@ -59,40 +94,5 @@ More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
 for instructions and the project rubric.
 
-## Hints!
 
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
-
-## Call for IDE Profiles Pull Requests
-
-Help your fellow students!
-
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to we ensure
-that students don't feel pressured to use one IDE or another.
-
-However! I'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
-
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
-
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
-
-Frankly, I've never been involved in a project with multiple IDE profiles
-before. I believe the best way to handle this would be to keep them out of the
-repo root to avoid clutter. My expectation is that most profiles will include
-instructions to copy files to a new location to get picked up by the IDE, but
-that's just a guess.
-
-One last note here: regardless of the IDE used, every submitted project must
-still be compilable with cmake and make./
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
