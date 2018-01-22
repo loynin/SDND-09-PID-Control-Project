@@ -35,7 +35,13 @@ Connected!!!
 
 ## Output of the PID Controller
 
-The following is an image of the simulator:
+All components of PID are affected to the performance of the controller.
+
+- P: in case that only P is turn on and D and I are off, the car could drive it self for about 20 seconds and then it get off track. It is expected for the result like this because while only P is activated the system could not solve the problem of the cte. 
+
+<kbd>
+<img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png" />
+</kbd>
 
 Here is initialized simulator before running against dataset:
 [![PID Controller with D & I  Turn Off](https://www.youtube.com/upload_thumbnail?v=0tfK9QU9omE&t=hqdefault&ts=1516508809022)](https://youtu.be/0tfK9QU9omE)
