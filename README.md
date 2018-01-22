@@ -54,7 +54,7 @@ Click on the image below to see the video of the driving:
 Click on the image below to see the video of the driving:
 
 <a href="https://youtu.be/5kR8-0AnkUM"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image3.png" width="500px"/></a>
----
+
 
 ## Dependencies
 
