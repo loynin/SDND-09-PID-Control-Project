@@ -31,26 +31,21 @@ Connected!!!
 
 ## Input Data into PID Controller
 
-> * The input data such as cte ( cross track error), speed, and steering angle into the PID system is provided by simulator.
+The input data such as cte ( cross track error), speed, and steering angle into the PID system is provided by simulator.
 
 ## Output of the PID Controller
 
 All components of PID are affected to the performance of the controller.
 
 - P: in case that only P is turn on and D and I are off, the car could drive it self for about 20 seconds and then it get off track. It is expected for the result like this because while only P is activated the system could not solve the problem of the cte. 
+<a href="https://youtu.be/0tfK9QU9omE"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png" width="500px"/></a>
 
-<a href="https://youtu.be/0tfK9QU9omE"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png" width="300px"/></a>
+- PD: in case that only P and D are turn on and I is off, the car could drive it self for complete track. It is expected for the result like this but the driving is not smooth and the car not stay well center. 
+<a href="https://youtu.be/5XadeIqMy1Q"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image2.png" width="500px"/></a>
 
+- PID: in case that all P, I and D are turn on, the car could drive it self for complete track. It is expected for the result like this and the car stay well center on the lane. 
+<a href="https://youtu.be/5kR8-0AnkUM"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image3.png" width="500px"/></a>
 ---
-
-Here is the simulator final state after running the particle filter:
-
-<kbd>
-<img src="images/image3.png" />
-</kbd>
-
----
-
 
 ## Dependencies
 
@@ -85,15 +80,6 @@ There's an experimental patch for windows in this [PR](https://github.com/udacit
 4. Run it: `./pid`. 
 
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
-
-## Project Instructions and Rubric
-
-Note: regardless of the changes you make, your project must be buildable using
-cmake and make!
-
-More information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
-for instructions and the project rubric.
 
 
 
