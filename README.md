@@ -38,15 +38,21 @@ The input data such as cte ( cross track error), speed, and steering angle into 
 All components of PID are affected to the performance of the controller.
 
 - P: in case that only P is turn on and D and I are off, the car could drive it self for about 20 seconds and then it get off track. It is expected for the result like this because while only P is activated the system could not solve the problem of the cte.
+
 Click on the image below to see the video of the driving:
+
 <a href="https://youtu.be/0tfK9QU9omE"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image1.png" width="500px"/></a>
 
 - PD: in case that only P and D are turn on and I is off, the car could drive it self for complete track. It is expected for the result like this but the driving is not smooth and the car not stay well center.
+
 Click on the image below to see the video of the driving:
+
 <a href="https://youtu.be/5XadeIqMy1Q"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image2.png" width="500px"/></a>
 
 - PID: in case that all P, I and D are turn on, the car could drive it self for complete track. It is expected for the result like this and the car stay well center on the lane.
+
 Click on the image below to see the video of the driving:
+
 <a href="https://youtu.be/5kR8-0AnkUM"><img src="https://github.com/loynin/SDND-09-PID-Control-Project/blob/master/images/image3.png" width="500px"/></a>
 ---
 
